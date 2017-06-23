@@ -196,6 +196,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.carrier=unknown \
 	ro.com.android.dataroaming=false \
 	ro.config.vc_call_vol_steps=11 \
+	ro.config.media_vol_steps=25 \
 	ro.telephony.default_network=20,20 \
 	telephony.lteOnCdmaDevice=1
 
