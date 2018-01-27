@@ -254,6 +254,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.timed.enable=true
 
+# Touch response
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.vendor.qti.inputopts.enable=true \
+	persist.vendor.qti.inputopts.movetouchslop=0.6
+
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.usb.firstboot.config=diag,serial_cdev,rmnet,adb
