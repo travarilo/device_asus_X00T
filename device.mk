@@ -353,6 +353,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+# Preopt SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
