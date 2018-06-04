@@ -304,6 +304,7 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libaacwrapper \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
