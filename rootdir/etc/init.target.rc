@@ -253,12 +253,6 @@ service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
     socket ims_qmid stream 0660 system radio
     group radio log diag
 
-service energy-awareness /vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
-
 service vendor.pd_mapper /vendor/bin/pd-mapper
      class core
 
