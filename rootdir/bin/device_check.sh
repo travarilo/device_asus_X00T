@@ -40,3 +40,7 @@ else
     rm -rf /vendor/bin/hw/android.hardware.nfc@1.1-service
 fi
 
+# Delete Goodix FP data on clean flash
+if [ ! -f /data/system/users/0/settings_fingerprint.xml ]; then
+    rm -rf /persist/data/finger_*
+fi
