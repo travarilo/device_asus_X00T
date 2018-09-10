@@ -2093,6 +2093,9 @@ case "$target" in
             # re-enable thermal and BCL hotplug
             echo 1 > /sys/module/msm_thermal/core_control/enabled
 
+            # Signal perfd that boot has completed
+            setprop sys.post_boot.parsed 1
+
             # Set Memory parameters
             configure_memory_parameters
 

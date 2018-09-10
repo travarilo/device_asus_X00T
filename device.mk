@@ -332,6 +332,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
 #    $(LOCAL_PATH)/overlay-lineage
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service.asus_X00TD-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 #PRODUCT_ENFORCE_RRO_TARGETS := \
 #    framework-res
 
