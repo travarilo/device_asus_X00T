@@ -387,7 +387,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_X00TD
+    librecovery_updater_X00T
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -482,4 +482,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-$(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
+$(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)

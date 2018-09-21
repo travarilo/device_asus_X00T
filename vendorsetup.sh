@@ -1,3 +1,3 @@
-add_lunch_combo liquid_X00TD-user
-add_lunch_combo liquid_X00TD-userdebug
-add_lunch_combo liquid_X00TD-eng
+add_lunch_combo liquid_X00T-user
+add_lunch_combo liquid_X00T-userdebug
+add_lunch_combo liquid_X00T-eng
