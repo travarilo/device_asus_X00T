@@ -2497,9 +2497,9 @@ vendor/lib64/libsdm-diag.so|db8ca0ea417991ba22e8e7919d918d0a6b908ab3
 -vendor/lib64/libsdm-disp-vndapis.so|7dd94cb4409a987761d0c5b0c0c977e24c548d74
 vendor/lib64/libsdmextension.so|79fc5ce1b3bd237eb60d9d508353acd6f6728998
 vendor/lib64/libtinyxml2_1.so|eae7c0526a56300dad04bce1a4e154a5869b3542
- # Graphics (Vulkan) - from LA.UM.7.2.r1-03600-sdm660.0
-vendor/lib/hw/vulkan.sdm660.so|3db8b9fd6dd25259eac9d8b4866ee33ce7e386a1
-vendor/lib64/hw/vulkan.sdm660.so|ca80111741eb03a5eb0c5e306f255c07277a3429
+# Graphics (Vulkan) - from LA.UM.7.2.r1-04000-sdm660.0
+vendor/lib/hw/vulkan.sdm660.so|869fab7525e1b116e926268636ea09ee0f563226
+vendor/lib64/hw/vulkan.sdm660.so|e029f01a236297998d3a86ab73abac9e0fdbf62a
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
