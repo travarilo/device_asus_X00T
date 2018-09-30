@@ -181,6 +181,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=20,20 \
 	telephony.lteOnCdmaDevice=1
 
+# Rescue Party
+PRODUCT_PROPERTY_OVERRIDES += \
+        persist.sys.disable_rescue=true
+
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.data.df.agg.dl_pkt=10 \
