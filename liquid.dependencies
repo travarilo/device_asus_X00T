@@ -1,7 +1,13 @@
 [
   {
-    "repository": "android_kernel_asus_sdm660",
-    "target_path": "kernel/asus/sdm660"
+    "repository": "travarilo/kernel_asus_sdm660",
+    "target_path": "kernel/asus/sdm660",
+    "revision": "pie"
+  },
+  {
+    "repository": "travarilo/proprietary_vendor_asus",
+    "target_path": "vendor/asus",
+    "revision": "pie"
   },
   {
     "repository": "android_packages_resources_devicesettings",
