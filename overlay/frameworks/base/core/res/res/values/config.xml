@@ -541,6 +541,9 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
+
     <string-array name="config_deviceKeyHandlerLibs" 
 translatable="false">
         <item>/system/priv-app/LineageParts/LineageParts.apk</item>
