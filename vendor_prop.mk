@@ -77,6 +77,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.debug.coresight.config=stm-events
 
+# Fling
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.min.fling_velocity=150 \
+	ro.max.fling_velocity=20000
+
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
 	vendor.fm.a2dp.conc.disabled=false
@@ -154,6 +159,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QCOM cabl
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.cabl=2
+
+# OTG
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.oem.otg_support=true
 
 # QTI
 PRODUCT_PROPERTY_OVERRIDES += \
