@@ -4,6 +4,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	audio.deep_buffer.media=true \
 	audio.offload.min.duration.secs=30 \
 	audio.offload.video=true \
+	ro.af.client_heap_size_kbyte=7168 \
 	persist.vendor.audio.fluence.speaker=false \
 	persist.vendor.audio.fluence.voicecall=true \
 	persist.vendor.audio.fluence.voicerec=true \
