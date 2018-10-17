@@ -50,7 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.camera.HAL3.enabled=1 \
 	persist.camera.preview.ubwc=0 \
 	persist.ts.rtmakeup=1 \
-	vendor.camera.aux.packagelist=com.android.camera \
+	vendor.camera.aux.packagelist=com.android.camera,com.google.android.GoogleCameraTele \
 
 # Charging maximum voltage
 PRODUCT_PROPERTY_OVERRIDES += \
