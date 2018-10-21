@@ -47,7 +47,6 @@ on property:persist.spectrum.profile=0
 
     # GPU
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
-    write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 0
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 430000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 160000000
     write /sys/module/adreno_idler/parameters/adreno_idler_active "1"
@@ -97,7 +96,6 @@ on property:persist.spectrum.profile=1
 
     # GPU
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
-    write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 1
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 430000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 160000000
     write /sys/module/adreno_idler/parameters/adreno_idler_active "1"
@@ -130,7 +128,6 @@ on property:persist.spectrum.profile=2
 
     # GPU
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor powersave
-    write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 0
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 266000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 160000000
     write /sys/module/adreno_idler/parameters/adreno_idler_active "1"
@@ -180,7 +177,6 @@ on property:persist.spectrum.profile=3
 
     # GPU
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
-    write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 2
     write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 430000000
     write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 266000000
     write /sys/module/adreno_idler/parameters/adreno_idler_active "0"
@@ -188,3 +184,4 @@ on property:persist.spectrum.profile=3
     # I/O Scheduler
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
     write /sys/block/mmcblk0/queue/scheduler bfq
+
