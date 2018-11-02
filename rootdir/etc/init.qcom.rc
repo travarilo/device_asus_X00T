@@ -629,11 +629,13 @@ service cnd /vendor/bin/cnd
     class main
     user system
     group system wifi inet radio wakelock net_admin
+    writepid /dev/cpuset/system-background/tasks
 
 service dpmQmiMgr /vendor/bin/dpmQmiMgr
     class main
     user system
     group radio system
+    writepid /dev/cpuset/system-background/tasks
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
@@ -645,10 +647,12 @@ service rmt_storage /vendor/bin/rmt_storage
     user root
     shutdown critical
     ioprio rt 0
+    writepid /dev/cpuset/system-background/tasks
 
 service tftp_server /vendor/bin/tftp_server
    class core
    user root
+   writepid /dev/cpuset/system-background/tasks
 
 service bt-dun /system/bin/dun-server /dev/smd7 /dev/rfcomm0
     class late_start
@@ -704,10 +708,12 @@ service qmuxd /vendor/bin/qmuxd
     user root
     group radio audio bluetooth gps nfc diag
     disabled
+    writepid /dev/cpuset/system-background/tasks
 
 service netmgrd /vendor/bin/netmgrd
     class main
     disabled
+    writepid /dev/cpuset/system-background/tasks
 
 service ipacm-diag /vendor/bin/ipacm-diag
     class main
@@ -721,6 +727,7 @@ service ipacm /vendor/bin/ipacm
     user radio
     group radio inet
     disabled
+    writepid /dev/cpuset/system-background/tasks
 
 service qti /vendor/bin/qti
     class main
@@ -908,6 +915,7 @@ service cnss-daemon /vendor/bin/cnss-daemon -n -l
     user system
     group system inet net_admin wifi
     capabilities NET_ADMIN
+    writepid /dev/cpuset/system-background/tasks
 
 on property:sys.powerctl=*
     stop cnss-daemon
@@ -958,6 +966,7 @@ service loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
+    writepid /dev/cpuset/system-background/tasks
 
 on property:crypto.driver.load=1
      insmod /system/lib/modules/qce.ko
@@ -1021,6 +1030,7 @@ service atfwd /vendor/bin/ATFWD-daemon
     user system
     group system radio
     disabled
+    writepid /dev/cpuset/system-background/tasks
 
 on property:persist.radio.atfwd.start=true
     start atfwd
@@ -1215,6 +1225,7 @@ service time_daemon /vendor/bin/time_daemon
     class main
     user root
     group root
+    writepid /dev/cpuset/system-background/tasks
 
 service qdmastatsd /vendor/bin/qdmastatsd
     class late_start
