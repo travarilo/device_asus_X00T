@@ -163,6 +163,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     liboverlay \
     libqdMetaData.system \
+    libvulkan \
     libtinyxml \
     memtrack.sdm660 \
     libgenlock
