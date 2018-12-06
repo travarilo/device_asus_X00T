@@ -328,7 +328,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.asus_X00TD-libperfmgr
+    android.hardware.power@1.2-service.asus_X00T-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json

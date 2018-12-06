@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.2-service.asus_X00TD-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.2-service.asus_X00T-libperfmgr"
 
 #include <android/log.h>
 #include <hidl/HidlTransportSupport.h>
