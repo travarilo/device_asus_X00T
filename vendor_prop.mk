@@ -55,7 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.camera.HAL3.enabled=1 \
 	persist.camera.preview.ubwc=0 \
 	persist.ts.rtmakeup=1 \
-	vendor.camera.aux.packagelist=com.android.camera,com.google.android.GoogleCameraTele \
+	camera.hal1.packagelist=com.whatsapp
 
 # Charging maximum voltage
 PRODUCT_PROPERTY_OVERRIDES += \
