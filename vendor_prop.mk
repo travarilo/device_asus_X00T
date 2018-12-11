@@ -105,7 +105,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-	debug.gralloc.enable_fb_ubwc=1 \
+	vendor.gralloc.enable_fb_ubwc=1 \
 	debug.hwui.use_buffer_age=false \
 	debug.sf.enable_hwc_vds=1 \
 	debug.sf.early_phase_offset_ns=5000000 \
@@ -233,7 +233,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Skip Validate Disable
 PRODUCT_PROPERTY_OVERRIDES += \
-	sdm.debug.disable_skip_validate=1
+	vendor.display.disable_skip_validate=1
 
 # Shutdown
 PRODUCT_PROPERTY_OVERRIDES += \
