@@ -720,7 +720,7 @@ service vendor.dataadpl /vendor/bin/adpl
 service vendor.sensors /vendor/bin/sscrpcd
     class core
     user system
-    group system
+    group root system input
     disabled
 
 service vendor.sensors.qti /vendor/bin/sensors.qti
