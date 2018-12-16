@@ -36,7 +36,6 @@ vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 # Alarm - from nitrogen-user 9 PKQ1.181007.001 8.11.28 release-keys
 framework/vendor.qti.hardware.alarm-V1.0-java.jar|4032a5e96a34e37ab19b94945e3c25bebad351e4
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk|881e8db50782b0c72aa9ca51731f30156c097f78
-vendor/bin/power_off_alarm|f973dabbdba85ece5115d4beb457cb37887e4358
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|b7f648c81773214202aaa3620863d048c90713c7
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so|0b6cfa8af4a0a056f9f4d57b53df07d0cdf0c982
