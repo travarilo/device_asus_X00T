@@ -112,7 +112,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
     dev.pm.dyn_samplingrate=1 \
