@@ -1304,11 +1304,11 @@ vendor/lib/libsdm-diag.so|4e64ac4c22121d7d70ccfb971d8322ed5ef7ced8
 vendor/lib/libsdmextension.so|fb3a58beac640cea488c4fdb12c75abfc131627f
 vendor/lib/libtinyxml2_1.so|6a85a3ebc064319fba7b69c400d7d13f55a5b959
 vendor/lib64/libqseed3.so|bf6e7672419a52c498ca4e00750b24d3743c403a
-vendor/lib64/libsdm-color.so|ceeb85c8e8c4f9eeb8a0b7e85869eac35bc4b9dc
-vendor/lib64/libsdm-diag.so|db8ca0ea417991ba22e8e7919d918d0a6b908ab3
+vendor/lib64/libsdm-color.so|a1af37dd56eea852759efe3aa213df3bd3c00daf
+vendor/lib64/libsdm-diag.so|87a4f764e894f16246c9a0d6e3f5885df76b750b
 -vendor/lib64/libsdm-disp-vndapis.so|7dd94cb4409a987761d0c5b0c0c977e24c548d74
-vendor/lib64/libsdmextension.so|d495ea469db7b4bce3c1bc3f60af907520dee47b
-vendor/lib64/libtinyxml2_1.so|eae7c0526a56300dad04bce1a4e154a5869b3542
+vendor/lib64/libsdmextension.so|fd0c55fb27df93a36affccba87843fe50a246719
+vendor/lib64/libtinyxml2_1.so|b225b16e689e7e4c26fc6144637f6b0c416063f8
 # Graphics (Vulkan) - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
 vendor/lib/hw/vulkan.sdm660.so|b50effe52bc030cdf5b337d18c4d9a07daf94a45
 vendor/lib64/hw/vulkan.sdm660.so|213678394fd6a3ab464841b54064372d3606df8c
