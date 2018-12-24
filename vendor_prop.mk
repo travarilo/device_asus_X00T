@@ -250,7 +250,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # System prop for UBWC
 PRODUCT_PROPERTY_OVERRIDES += \
-	video.disable.ubwc=1
+	video.disable.ubwc=1 \
+        vendor.video.disable.ubwc=1
 
 # Tap to Wake
 PRODUCT_PROPERTY_OVERRIDES += \
