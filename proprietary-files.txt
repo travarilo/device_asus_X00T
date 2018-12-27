@@ -1414,21 +1414,21 @@ vendor/lib64/libmmsw_detail_enhancement.so|3a25a9aa29c83c05ce16e0e5824ffd01ddbb0
 vendor/lib64/libmmsw_math.so|ddba2e939c9f00cf6db47b6f868d54bc53db3d12
 vendor/lib64/libmmsw_opencl.so|012b750438df06cfe7378e5376b016bf3d1b833b
 vendor/lib64/libmmsw_platform.so|20e0fee86a711e7dcfddd869f61c95d59d586f0f
-vendor/lib64/libOmxAacDec.so|5d9fed754ab3543f0f9eeda330f983de660fe84f
-vendor/lib64/libOmxAlacDec.so|ba483a70a147d83a5b218c5998fe6af375bb09b5
+vendor/lib64/libOmxAacDec.so|a1f80cc710b8e5e7716e328a54f9692e0f43236f
+vendor/lib64/libOmxAlacDec.so|554d89b3d69236e7cd28a0876fbe028a61cd4857
 vendor/lib64/libOmxAlacDecSw.so|f5674a318b592581295b816430f197fdf32b6f2c
-vendor/lib64/libOmxAmrDec.so|3305a4ad0164de7d73b1b61e7535c81f504df91f
-vendor/lib64/libOmxAmrwbplusDec.so|1a685015bb12dd18cecd18e8b2b69bb68e09848e
-vendor/lib64/libOmxApeDec.so|a2c361714d613475ee6497fe2b4d37a6e0d6d1c3
+vendor/lib64/libOmxAmrDec.so|e0732d20f7772c384bf8aac7d21f4d86cfd12043
+vendor/lib64/libOmxAmrwbplusDec.so|5993fce451ad1f29b1ff45219636074133bbc338
+vendor/lib64/libOmxApeDec.so|5a9dd147d3cb51069b5c36d38a83d626307d7080
 vendor/lib64/libOmxApeDecSw.so|3a952f4e6bf68615e9fd868a6b4c68a696aba212
 vendor/lib64/libOmxEvrcDec.so|dd2b87f34a2f3b39e316ac8b6360a9bc099f668c
-vendor/lib64/libOmxG711Dec.so|ca8530a569f76933f1993fc8235d0a9d237b7202
+vendor/lib64/libOmxG711Dec.so|57c25170aadee7f5074ab883e549e3ebc6bbbbb6
 vendor/lib64/libOmxQcelp13Dec.so|496abd450ef004bfb3cc93f349ed7cafe16c256d
-vendor/lib64/libOmxVpp.so|378dbf035f72e36f17ea39468ae148911ec01157
-vendor/lib64/libOmxWmaDec.so|2ff87d080bfee5c5b5653094bd69d66e2f54a7dc
-vendor/lib64/libvpplibrary.so|2a2f47f999206bae1f4f60c89e5e1b906b3004a6
+vendor/lib64/libOmxVpp.so|fd772d57a3e0d6a0ee2443145c430df92b06559b
+vendor/lib64/libOmxWmaDec.so|4614b729cf55ddd3aea01fb8fd251a0fa5052899
+vendor/lib64/libvpplibrary.so|0801a114d47298c82d94fccfcabf313cc8f965bc
 vendor/lib64/libvpphvx.so|e4bc7b7e5b9f3e40b24a2bb498883e9bff55622c
-vendor/lib64/libvpptestutils.so|62c1306de8b918cd823166362546764c68a1f4bc
+vendor/lib64/libvpptestutils.so|2f141f08570013cd3004550753d3a1c9fae8cbee
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so|8e39a979aac1aa7002ef4e50c74878177ee755f7
 
 # NFC
@@ -1753,9 +1753,9 @@ vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - from nitrogen-user 9 PKQ1.181007.001 8.11.28 release-keys
+# Time services - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
 -vendor/app/TimeService/TimeService.apk|78109530538aa8fb533ad288c9d356c57481a10e
-vendor/bin/time_daemon|f7237151ee490c1775dbf0a8729589662c8190b4
+vendor/bin/time_daemon|9fd464e3f356fcd4f4db6a4c9a1383d8210cb67b
 -vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
 
 # TouchScreen
@@ -1839,9 +1839,9 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
-# Wifi - from nitrogen-user 9 PKQ1.181007.001 8.11.28 release-keys
+# Wifi - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
 vendor/bin/cnss_diag|27c1bf202f481e6d74e9c6f0eb7e25ee052cea4d
-vendor/bin/cnss-daemon|8c16a0601a50a89e26a48046316e906444908ce7
+vendor/bin/cnss-daemon|df219cb3134ba5b60ade06f0b3bd6cd5c13eb8e3
 vendor/bin/fstman|b17e70c447a0b85631f6062a149b91df5e28a1f9
 vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so|aa29c08f806afc66adcec01cbbc01b021f83171e
 
