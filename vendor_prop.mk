@@ -115,8 +115,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.demo.hdmirotationlock=false \
 	ro.opengles.version=196610 \
 	ro.sf.lcd_density=420 \
-	vendor.display.enable_default_color_mode=1
-	sdm.debug.rotator_downscale=1
+	vendor.display.enable_default_color_mode=1 \
+        vendor.display.rotator_downscale=1 \
+        vendor.display.perf_hint_window=50 \
+        vendor.display.disable_partial_split=1
 
 # LED
 PRODUCT_PROPERTY_OVERRIDES += \
