@@ -385,8 +385,8 @@ PRODUCT_PACKAGES += \
     rcs_service_api.xml
 
 # RenderScript HAL
-#PRODUCT_PACKAGES += \
-#    android.hardware.renderscript@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
 
 # Recovery
 PRODUCT_PACKAGES += \
