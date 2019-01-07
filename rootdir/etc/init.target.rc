@@ -93,23 +93,6 @@ on boot
     write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
-    ####Regionalization config and prop files####
-    chmod 0644 /mnt/vendor/persist/speccfg/spec
-    chmod 0644 /mnt/vendor/persist/speccfg/devicetype
-    chmod 0644 /mnt/vendor/persist/speccfg/mbnversion
-    chmod 0644 /mnt/vendor/persist/speccfg/.not_triggered
-    chmod 0644 /mnt/vendor/persist/speccfg/vendor_ro.prop
-    chmod 0644 /mnt/vendor/persist/speccfg/vendor_persist.prop
-    chmod 0644 /mnt/vendor/persist/speccfg/submask
-    chmod 0644 /mnt/vendor/persist/speccfg/partition
-    chown system system /mnt/vendor/persist/speccfg/spec
-    chown system system /mnt/vendor/persist/speccfg/devicetype
-    chown system system /mnt/vendor/persist/speccfg/mbnversion
-    chown system system /mnt/vendor/persist/speccfg/.not_triggered
-    chown system system /mnt/vendor/persist/speccfg/vendor_ro.prop
-    chown system system /mnt/vendor/persist/speccfg/vendor_persist.prop
-    chown system system /mnt/vendor/persist/speccfg/submask
-    chown system system /mnt/vendor/persist/speccfg/partition
 
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
