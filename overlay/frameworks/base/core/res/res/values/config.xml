@@ -1043,4 +1043,7 @@
 
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
+
+    <!-- Disable rounded corners on windows to improve graphics performance -->
+    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 </resources>
