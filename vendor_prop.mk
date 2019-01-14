@@ -22,6 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.audio.ras.enabled=false \
 	ro.vendor.audio.sdk.fluencetype=fluence  \
 	ro.vendor.audio.sdk.ssr=false \
+	vendor.audio.adm.buffering.ms=6 \
 	vendor.audio.dolby.ds2.enabled=false \
 	vendor.audio.dolby.ds2.hardbypass=false \
 	vendor.audio.flac.sw.decoder.24bit=true \
