@@ -280,3 +280,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.qti.config.zram=true
+
+# Havoc Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.havoc.maintainer=rizkybenggolo
