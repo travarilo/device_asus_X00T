@@ -33,6 +33,9 @@ PRODUCT_MODEL := Zenfone Max Pro M1
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.com.google.clientidbase.ms=android-asus-tpin
+
 TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00T
 
