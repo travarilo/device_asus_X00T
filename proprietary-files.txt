@@ -1284,6 +1284,7 @@ vendor/lib64/libllvm-qcom.so|4e9dc8128379692407bf730f1b1ebdd3307bd5c0
 vendor/lib64/librs_adreno_sha1.so|e746c872c123948f91ea8fe93e39bda5a67cc7a2
 vendor/lib64/librs_adreno.so|b6bc2274fc4079818f3124a694348a890c5d7b07
 vendor/lib64/libRSDriver_adreno.so|3d77fb21a40b98e908840aa89d044aea4f695694
+
 # Graphics - from jasmine PKQ1.180904.001
 vendor/lib64/libc2dcolorconvert.so|53b771f76251458ef9681c564caeebd46971189c
 vendor/lib64/libllvm-qgl.so|113d9562ae65d6e6b036c68f282c1df226349dbd
@@ -1293,25 +1294,27 @@ vendor/lib64/libOpenCL.so|1e78c9b98378803703835a3e1cbfabf43318f341
 vendor/lib/egl/libq3dtools_esx.so|9116ff1328163d82ca624ea02f09d80ec0f055dc
 vendor/lib/libc2dcolorconvert.so|8fe69591ad9e8169c88d963b5f24f64a57fff084
 vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
- # Graphics (HDR) - from LA.UM.7.2.r1-03600-sdm660.0
+
+# Graphics (HDR) - from LA.UM.7.2.r1-03600-sdm660.0
 vendor/lib/libhdr_tm.so|76ccea18cc7c1e2d306f0ae929d9a8859c452b9f
 vendor/lib64/libhdr_tm.so|63566fef9874efc6f5cc3985d2d69a1c1b76adca
-# Graphics (SDM) - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
-vendor/lib/libqseed3.so|5278764477cea848e8eedd04d32e07c83cda09f4
-vendor/lib/libsdm-color.so|1aab62e6739511fe7e123d351dd1674f35aa2834
-vendor/lib/libsdm-diag.so|4e64ac4c22121d7d70ccfb971d8322ed5ef7ced8
--vendor/lib/libsdm-disp-vndapis.so|66477d2b02a21c14dd734f6ad6dbfbe03ebfc52c
-vendor/lib/libsdmextension.so|fb3a58beac640cea488c4fdb12c75abfc131627f
-vendor/lib/libtinyxml2_1.so|6a85a3ebc064319fba7b69c400d7d13f55a5b959
-vendor/lib64/libqseed3.so|bf6e7672419a52c498ca4e00750b24d3743c403a
-vendor/lib64/libsdm-color.so|a1af37dd56eea852759efe3aa213df3bd3c00daf
-vendor/lib64/libsdm-diag.so|87a4f764e894f16246c9a0d6e3f5885df76b750b
--vendor/lib64/libsdm-disp-vndapis.so|7dd94cb4409a987761d0c5b0c0c977e24c548d74
-vendor/lib64/libsdmextension.so|fd0c55fb27df93a36affccba87843fe50a246719
-vendor/lib64/libtinyxml2_1.so|b225b16e689e7e4c26fc6144637f6b0c416063f8
+
 # Graphics (Vulkan) - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
 vendor/lib/hw/vulkan.sdm660.so|b50effe52bc030cdf5b337d18c4d9a07daf94a45
 vendor/lib64/hw/vulkan.sdm660.so|213678394fd6a3ab464841b54064372d3606df8c
+
+# Graphics (SDM) - from LA.UM.7.4.r1-04100-8x98.0
+vendor/lib/libqseed3.so|c60e08f5efa1e9aea339a7a5a6dccdc2d107f530
+vendor/lib/libsdm-color.so|8e083bb2a20ecf76bf96e303134cbaa9ce46be81
+vendor/lib/libsdm-diag.so|e0455e9dd0e2378a3f770eb914aa11e612d594eb
+vendor/lib/libsdmextension.so|3104df6a013e53b972227ed132aa683ec7303746
+vendor/lib/libtinyxml2_1.so|20fea724b7a9f94530833cfdc841049104a0ffa3
+vendor/lib64/libqseed3.so|f95dd7b55de9401ce2f568e3ec18493daa5a6bfe
+vendor/lib64/libsdm-color.so|1a9b68e5f2f09d37c2fa83907a6a70c7adb081f5
+vendor/lib64/libsdm-diag.so|25bab19a8c4453b3d20e3e1a71a0e8d3675b17b4
+vendor/lib64/libsdm-disp-vndapis.so|8ac59a32a2601a8a4b0d3b097ed02f1279f3c6b7
+vendor/lib64/libsdmextension.so|c4a416cb8c0f5dc87bee8494d70247cf049224b9
+vendor/lib64/libtinyxml2_1.so|9d5179eda8ce70b9a4014b144f9d23d33509fddc
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
