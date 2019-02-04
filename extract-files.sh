@@ -82,6 +82,15 @@ function blob_fixup() {
     vendor/lib64/vendor.qti.gnss@1.0_vendor.so)
         patchelf --replace-needed "android.hardware.gnss@1.0.so" "android.hardware.gnss@1.0-v27.so" "${2}"
         ;;
+    vendor/lib/libarcsoft_beautyshot.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
+        ;;
+    vendor/lib/libmmcamera2_stats_modules.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
+        ;;
+    vendor/lib/libmpbase.so)
+        patchelf --remove-needed "libandroid.so" "${2}"
+        ;;
 	esac
 }
 
