@@ -164,6 +164,11 @@ PRODUCT_PACKAGES += \
     camera.device@3.3-impl \
     Snapcam
 
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     cneapiclient \
