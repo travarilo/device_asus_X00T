@@ -120,6 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.enable_fb_ubwc=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.gralloc.disable_ubwc=0 \
+    debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
