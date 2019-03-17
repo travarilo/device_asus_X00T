@@ -7,9 +7,6 @@ VNDK_SP_LIBRARIES := \
     libartbase \
     libziparchive
 
-install_in_hw_dir := \
-   android.hidl.memory@1.0-impl
-
 ifdef PLATFORM_VNDK_VERSION
 vndk_sp_dir := vndk-sp-$(PLATFORM_VNDK_VERSION)
 else
