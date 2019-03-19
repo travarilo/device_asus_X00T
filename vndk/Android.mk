@@ -4,8 +4,8 @@ ifndef BOARD_VNDK_VERSION
 
 VNDK_SP_LIBRARIES := \
     libdexfile \
-    libartbase \
-    libziparchive
+    libpng \
+    libft2
 
 ifdef PLATFORM_VNDK_VERSION
 vndk_sp_dir := vndk-sp-$(PLATFORM_VNDK_VERSION)
