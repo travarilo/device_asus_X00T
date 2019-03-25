@@ -9,3 +9,10 @@ persist.audio.dirac                u:object_r:dirac_prop:s0
 # Camera
 persist.vendor.camera.debug.logfile       u:object_r:camera_prop:s0
 persist.vendor.camera              u:object_r:vendor_camera_prop:s0
+
+# Asus bokeh camera 
+vendor.debug.camera.prop_picselfie            u:object_r:vendor_camera_prop:s0
+vendor.debug.camera.prop_bokeh                u:object_r:vendor_camera_prop:s0
+vendor.debug.camera.prop_hdr                  u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.bokeh.dumpimg           u:object_r:vendor_camera_prop:s0
+vendor.debug.camera.prop_dis                  u:object_r:vendor_camera_prop:s0
