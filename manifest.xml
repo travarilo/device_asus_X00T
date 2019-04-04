@@ -648,6 +648,10 @@
             <name>IWifiDisplaySessionAudioTrack</name>
             <instance>wifidisplaysessionaudiotrack</instance>
         </interface>
+        <interface>
+            <name>IWifiDisplaySessionImageTrack</name>
+            <instance>wifidisplaysessionimagetrack</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.soter</name>
