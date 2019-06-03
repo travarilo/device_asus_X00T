@@ -145,7 +145,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-qcp=true \
     media.stagefright.enable-scan=true \
     mm.enable.smoothstreaming=true \
-    vendor.mm.enable.qcom_parser=13631486 \
     mmp.enable.3g2=true \
     persist.mm.enable.prefetch=true \
     vendor.vidc.enc.disable_bframes=1 \
