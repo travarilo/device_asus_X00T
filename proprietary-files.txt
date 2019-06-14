@@ -166,14 +166,12 @@ vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Headset_cal.acdb
 vendor/etc/acdbdata/QRD/NonCE/QRD_NonCE_Handset_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbtnv.so
+# Bluetooth - from LA.UM.7.2.r1-06900-sdm660.0
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|514226960669db32e44a9457e6de7c07ac70ec1b
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|4e14141172904d2aa6e6c6944b6f15312b4e8651
+vendor/lib64/libbt-hidlclient.so|7d25d6082cb6fd8da40fc69f93c6341f8c1dead8
+vendor/lib64/libbtnv.so|f354bf758b8d0b35e6ac0005640d05abe0f89280
 
 # Camera
 lib64/libarcsoft_beautyshot.so
