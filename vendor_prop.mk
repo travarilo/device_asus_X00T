@@ -238,6 +238,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=20,20 \
     telephony.lteOnCdmaDevice=1
 
+# Radio Debug Options
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.dbg.ims_volte_enable=1 \
+   persist.dbg.volte_avail_ovr=1 \
+   persist.dbg.vt_avail_ovr=1 \
+   persist.dbg.wfc_avail_ovr=1
+
+# Radio Options
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.vendor.radio.rat_on=combine \
+   persist.vendor.radio.data_ltd_sys_ind=1 \
+   persist.vendor.radio.data_con_rprt=1 \
+   persist.radio.calls.on.ims=1
+
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0
