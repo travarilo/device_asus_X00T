@@ -55,6 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.bt.enable.multicast=0 \
     persist.bt.hfp.playbackforvr=false \
     persist.bt.hfp.playbackforvoip=false \
+    persist.vendor.bt.aac_frm_ctl.enabled=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     persist.vendor.btstack.enable.splita2dp=true \
     ro.bluetooth.emb_wp_mode=true \
