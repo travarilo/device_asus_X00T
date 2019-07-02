@@ -489,7 +489,6 @@ service nqnfcinfo /vendor/bin/nqnfcinfo
     group nfc
     user system
     oneshot
-    disabled
 
 service iop /vendor/bin/iop
     class main
