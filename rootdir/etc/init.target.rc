@@ -130,6 +130,10 @@ on boot
     # Button backlight
     chown system system /sys/class/leds/lcd-backlight/brightness
 
+    # Battery charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 #Huaqin add for sensors permission-ZQL1650-141 by chenyijun5 at 2018/2/1 start
     chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_enable
     chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_delay
