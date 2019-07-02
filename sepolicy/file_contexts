@@ -23,3 +23,10 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.X00T    u:object_r:hal_light_default_exec:s0
 # Ipa
 /vendor/bin/init\.qcom\.ipastart\.sh                                    u:object_r:init-qcom-ipastart-sh_exec:s0
+
+# Kcal
+/sys/devices/platform/kcal_ctrl\.0(/.*)?                                 u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?                               u:object_r:kcal_dev:s0
+
+# Gestures
+/sys/kernel/touchpanel/dclicknode                                       u:object_r:sysfs:s0
