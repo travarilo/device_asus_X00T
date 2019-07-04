@@ -97,6 +97,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.coresight.config=stm-events
 
+# Fling
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.min.fling_velocity=160 \
+    ro.max.fling_velocity=20000
+
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.fm.a2dp.conc.disabled=false
@@ -125,7 +130,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=420 \
     vendor.display.enable_default_color_mode=1 \
-    vendor.display.disable_rotator_downscale=1
+    vendor.display.disable_rotator_downscale=1 \
+    debug.composition.type=c2d \
+    debug.mdpcomp.idletime=600 \
+    persist.hwc.mdpcomp.enable=true \
+    persist.hwc.ptor.enable=true \
+    debug.enable.sglscale=1 \
+    debug.egl.hw=1 \
+    debug.sf.disable_hwc=0 \
+    debug.sf.recomputecrop=0 \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.gpu_comp_tiling=1 \
+    debug.performance.tuning=1 \
+    video.accelerate.hw=1
 
 # LED
 PRODUCT_PROPERTY_OVERRIDES += \
