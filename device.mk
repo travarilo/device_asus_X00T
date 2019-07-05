@@ -248,7 +248,11 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.X00T
+    lights.sdm660
+
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
