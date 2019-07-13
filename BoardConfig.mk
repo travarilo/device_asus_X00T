@@ -213,9 +213,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/vendor_framework_compatibility_matrix.xml
 
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
-
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
