@@ -1,0 +1,5 @@
+allow untrusted_app_25 bt_firmware_file:dir getattr;
+allow untrusted_app_25 firmware_file:dir getattr;
+allow untrusted_app_25 firmware_file:filesystem getattr;
+allow untrusted_app_25 mnt_vendor_file:dir search;
+allow untrusted_app_25 rootfs:dir read;
