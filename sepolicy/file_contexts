@@ -2,6 +2,10 @@
 /(vendor|system/vendor)/bin/nvram_btwifi                                u:object_r:nvram_btwifi_exec:s0
 /(vendor|system/vendor)/bin/init\.btmac\.sh                             u:object_r:init_blutmac_exec:s0
 
+# Firmware
+/(vendor|system/vendor)/bt_firmware                                     u:object_r:bt_firmware_file:s0
+/(vendor|system/vendor)/firmware_mnt                                    u:object_r:firmware_file:s0
+
 # Goodix Fingerprint
 /dev/goodix_fp                                                          u:object_r:fingerprintd_device:s0
 
