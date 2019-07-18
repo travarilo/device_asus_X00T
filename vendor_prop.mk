@@ -78,7 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cne.feature=true
+    persist.vendor.cne.feature=1
 
 # Dalvik overrides
 PRODUCT_PROPERTY_OVERRIDES += \
