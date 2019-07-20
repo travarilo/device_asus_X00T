@@ -2,7 +2,7 @@ type_transition init nvram_btwifi_exec:process nvram_btwifi;
 
 allow init init_blutmac_exec:file execute;
 allow init nvram_btwifi:process { rlimitinh siginh transition };
-allow init nvram_btwifi_exec:file execute;
+allow init nvram_btwifi_exec:file { read getattr execute map open };
 
 allow init sysfs_mmc_host:file { setattr w_file_perms };
 allow init proc_swappiness:file w_file_perms;
@@ -13,5 +13,4 @@ allow init untrusted_app_27:fd use;
 allow init hidl_memory_hwservice:hwservice_manager find;
 
 dontaudit init nvram_btwifi:process noatsecure;
-
 dontaudit init domain:process noatsecure;
