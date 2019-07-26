@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mk_X00T.mk
+    $(LOCAL_DIR)/pixeldust_X00T.mk
