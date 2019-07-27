@@ -426,6 +426,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc
 
+# Snapcam Libs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/lib/libarcsoft_beautyshot.so:system/priv-app/Snapcam/lib/arm64/libarcsoft_beautyshot.so \
+    $(LOCAL_PATH)/prebuilt/lib/libarcsoft_night_shot.so:system/priv-app/Snapcam/lib/arm64/libarcsoft_night_shot.so \
+    $(LOCAL_PATH)/prebuilt/lib/libc++.so:system/priv-app/Snapcam/lib/arm64/libc++.so \
+    $(LOCAL_PATH)/prebuilt/lib/libjni_hq_beautyshot.so:system/priv-app/Snapcam/lib/arm64/libjni_hq_beautyshot.so \
+    $(LOCAL_PATH)/prebuilt/lib/libjni_hq_night_shot.so:system/priv-app/Snapcam/lib/arm64/libjni_hq_night_shot.so \
+    $(LOCAL_PATH)/prebuilt/lib/libjni_imageutil.so:system/priv-app/Snapcam/lib/arm64/libjni_imageutil.so \
+    $(LOCAL_PATH)/prebuilt/lib/libjni_snapcammosaic.so:system/priv-app/Snapcam/lib/arm64/libjni_snapcammosaic.so \
+    $(LOCAL_PATH)/prebuilt/lib/libjni_snapcamtinyplanet.so:system/priv-app/Snapcam/lib/arm64/libjni_snapcamtinyplanet.so \
+    $(LOCAL_PATH)/prebuilt/lib/libmpbase.so:system/priv-app/Snapcam/lib/arm64/libmpbase.so
+
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
