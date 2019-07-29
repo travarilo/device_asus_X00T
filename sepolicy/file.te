@@ -6,9 +6,6 @@ type debugfs_power_stats, fs_type, debugfs_type;
 type sysfs_touchpanel, sysfs_type, fs_type;
 type sysfs_dclicknode, sysfs_type, fs_type;
 
-# bluetooth
-type nvram_btwifi_tmpfs, fs_type;
-
 # proc
 type proc_swappiness, proc_type, fs_type;
 
