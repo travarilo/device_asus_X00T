@@ -133,15 +133,7 @@ $(TINYCOMPRESS64_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(TINYCOMPRESS_SYMLINK) $(TINYCOMPRESS64_SYMLINK)
 
-SNAP_LIBS := libarcsoft_hdr.so libarcsoft_panorama_burstcapture.so libarcsoft_single_chart_calibration.so libjni_blurbuster.so libjni_chromaflash.so \
-             libjni_clearsight.so libjni_dualcamera.so libjni_filtergenerator.so libjni_gallery_eglfence.so libjni_gallery_filters.so \
-             libjni_gallery_jpegstream.so libjni_hazebuster.so libjni_hq_dualcam_calibration.so libjni_hq_hdr_shot.so libjni_hq_panorama.so \
-             libjni_makeupV2.so libjni_optizoom.so libjni_pacprocessor.so libjni_panorama.so libjni_seestraight.so \
-             libjni_sharpshooter.so libjni_stillmore.so libjni_trackingfocus.so libjni_trueportrait.so \
-             libjni_truescanner_v2.so libjni_ubifocus.so libscene-native-lib.so libtensorflow_inference.so \
-             libarcsoft_beautyshot.so libarcsoft_night_shot.so libc++.so libjni_hq_beautyshot.so libjni_hq_night_shot.so \
-             libjni_imageutil.so libjni_snapcammosaic.so libjni_snapcamtinyplanet.so libmpbase.so
-
+SNAP_LIBS := libarcsoft_beautyshot.so libarcsoft_night_shot.so libc++.so libjni_hq_beautyshot.so libjni_hq_night_shot.so libjni_imageutil.so libjni_snapcammosaic.so libjni_snapcamtinyplanet.so libmpbase.so
 SNAP_SYMLINKS := $(addprefix $(TARGET_OUT_APPS_PRIVILEGED)/Snapcam/lib/arm64/,$(notdir $(SNAP_LIBS)))
 $(SNAP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "SNAP lib link: $@"
