@@ -132,6 +132,10 @@ on boot
     # Button backlight
     chown system system /sys/class/leds/lcd-backlight/brightness
 
+    # Backlight dimmer
+    chown system system /sys/module/mdss_fb/parameters/backlight_dimmer
+    chmod 0660 /sys/module/mdss_fb/parameters/backlight_dimmer
+
     # KCAL permissions
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
