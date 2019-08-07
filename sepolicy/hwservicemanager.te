@@ -1,0 +1,1 @@
+allow hwservicemanager { call }:binder transfer;
