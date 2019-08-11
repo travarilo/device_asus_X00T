@@ -46,7 +46,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.period_size=192 \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
-    vendor.audio.adm.buffering.ms=2 \
     vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
@@ -113,7 +112,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
     dev.pm.dyn_samplingrate=1 \
@@ -196,8 +194,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QCOM cabl
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=2 \
-    ro.vendor.display.cabl=2
+    ro.qualcomm.cabl=0 \
+    ro.vendor.display.cabl=0
 
 # QTI
 PRODUCT_PROPERTY_OVERRIDES += \

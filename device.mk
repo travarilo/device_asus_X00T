@@ -268,7 +268,11 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.fmw-RG
+    lights.sdm660
+
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
@@ -360,6 +364,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.btmac.sh \
     init.class_main.sh \
+    init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
@@ -368,6 +373,7 @@ PRODUCT_PACKAGES += \
     init.qti.ims.sh \
     move_time_data.sh \
     move_wifi_data.sh \
+    fix_baseband.sh \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
@@ -422,18 +428,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc
 
-# Snapcam Libs
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/lib/libarcsoft_beautyshot.so:system/priv-app/Snapcam/lib/arm64/libarcsoft_beautyshot.so \
-    $(LOCAL_PATH)/prebuilt/lib/libarcsoft_night_shot.so:system/priv-app/Snapcam/lib/arm64/libarcsoft_night_shot.so \
-    $(LOCAL_PATH)/prebuilt/lib/libc++.so:system/priv-app/Snapcam/lib/arm64/libc++.so \
-    $(LOCAL_PATH)/prebuilt/lib/libjni_hq_beautyshot.so:system/priv-app/Snapcam/lib/arm64/libjni_hq_beautyshot.so \
-    $(LOCAL_PATH)/prebuilt/lib/libjni_hq_night_shot.so:system/priv-app/Snapcam/lib/arm64/libjni_hq_night_shot.so \
-    $(LOCAL_PATH)/prebuilt/lib/libjni_imageutil.so:system/priv-app/Snapcam/lib/arm64/libjni_imageutil.so \
-    $(LOCAL_PATH)/prebuilt/lib/libjni_snapcammosaic.so:system/priv-app/Snapcam/lib/arm64/libjni_snapcammosaic.so \
-    $(LOCAL_PATH)/prebuilt/lib/libjni_snapcamtinyplanet.so:system/priv-app/Snapcam/lib/arm64/libjni_snapcamtinyplanet.so \
-    $(LOCAL_PATH)/prebuilt/lib/libmpbase.so:system/priv-app/Snapcam/lib/arm64/libmpbase.so
-
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
@@ -470,7 +464,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-	android.hardware.usb@1.0-service.basic
+	android.hardware.usb@1.0-service.X00T
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
