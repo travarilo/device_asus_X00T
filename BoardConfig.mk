@@ -209,10 +209,8 @@ PRODUCT_SOONG_NAMESPACES += \
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-<<<<<<< HEAD
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/vendor_framework_compatibility_matrix.xml
-=======
->>>>>>> 03468dbfd46de10b767a5c515de14b686c8ed5f3
+
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
