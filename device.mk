@@ -364,6 +364,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.btmac.sh \
     init.class_main.sh \
+    init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
@@ -372,6 +373,7 @@ PRODUCT_PACKAGES += \
     init.qti.ims.sh \
     move_time_data.sh \
     move_wifi_data.sh \
+    fix_baseband.sh \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
@@ -462,7 +464,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-	android.hardware.usb@1.0-service.basic
+	android.hardware.usb@1.0-service.X00T
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -511,7 +513,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Zenfone Parts
-PRODUCT_PACKAGES += \
-    ZenfoneParts
+#PRODUCT_PACKAGES += \
+#    ZenfoneParts
 
 $(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)

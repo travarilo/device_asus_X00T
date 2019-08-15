@@ -46,7 +46,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.period_size=192 \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
-    vendor.audio.adm.buffering.ms=2 \
     vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
@@ -78,7 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cne.feature=true
+    persist.vendor.cne.feature=1
 
 # Dalvik overrides
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -112,20 +111,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
-    debug.sf.early_phase_offset_ns=5000000 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
-    debug.gralloc.enable_fb_ubwc=1 \
-    vendor.gralloc.enable_fb_ubwc=1 \
-    vendor.gralloc.disable_ubwc=0 \
     debug.cpurend.vsync=false \
     debug.hwui.use_buffer_age=false \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=420 \
+    vendor.display.disable_inline_rotator=1 \
+    vendor.display.disable_partial_split=1 \
+    vendor.display.disable_rotator_downscale=1 \
+    vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=1 \
-    vendor.display.disable_rotator_downscale=1
+    vendor.display.perf_hint_window=50 \
+    vendor.gralloc.disable_ubwc=0 \
+    vendor.gralloc.enable_fb_ubwc=1
+
+# Early phase offset configuration for SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.early_phase_offset_ns=1500000 \
+    debug.sf.early_app_phase_offset_ns=1500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # LED
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -187,8 +194,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QCOM cabl
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=2 \
-    ro.vendor.display.cabl=2
+    ro.qualcomm.cabl=0 \
+    ro.vendor.display.cabl=0
 
 # QTI
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -251,11 +258,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sensors.mot_detect=true \
     ro.vendor.qti.sensors.facing=false \
     ro.vendor.qti.sensors.cmc=false
-
-# Skip Validate Disable
-PRODUCT_PROPERTY_OVERRIDES += \
-    sdm.debug.disable_skip_validate=1 \
-    vendor.display.disable_skip_validate=1
 
 # Shutdown
 PRODUCT_PROPERTY_OVERRIDES += \
