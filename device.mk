@@ -82,11 +82,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
-    libaudio-resampler \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libvolumelistener
+    libaudio-resampler
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
