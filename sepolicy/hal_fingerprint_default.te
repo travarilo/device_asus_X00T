@@ -19,6 +19,7 @@ allow hal_fingerprint_default cdfinger_data_file:file rw_file_perms;
 
 allow hal_fingerprint_default firmware_file:dir search;
 allow hal_fingerprint_default firmware_file:file r_file_perms;
+allow hal_fingerprint_default mnt_vendor_file:dir search;
 
 # TODO(b/36644492): Remove data_between_core_and_vendor_violators once
 # hal_fingerprint no longer directly accesses fingerprintd_data_file.
