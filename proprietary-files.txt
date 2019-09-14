@@ -1344,7 +1344,7 @@ lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
 lib64/vendor.qti.ims.callinfo@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
--priv-app/ims/ims.apk
+-priv-app/ims/ims.apk|58dea61205ffcee82b8d9b7431759e0eeb0f84b7
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
