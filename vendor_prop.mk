@@ -248,6 +248,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0
 
+#set dpm related prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.dpm.feature=1 \
+    persist.vendor.dpm.nsrm.bkg.evt=3955
+
 # Sensor
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sdk.sensors.gestures=false \
