@@ -263,10 +263,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
-# USB
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.usb.firstboot.config=diag,serial_cdev,rmnet,adb
-
 # WFD display
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
