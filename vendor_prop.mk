@@ -227,7 +227,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.ecclist=112,911 \
     ro.telephony.default_network=20,20 \
     telephony.lteOnCdmaDevice=1 \
-    persist.vendor.radio.procedure_bytes=SKIP
+    persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.radio.flexmap_type=none
 
 # Radio Debug Options
 PRODUCT_PROPERTY_OVERRIDES += \
