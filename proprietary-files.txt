@@ -1041,6 +1041,7 @@ vendor/firmware/a512_zap.elf
 vendor/firmware/a512_zap.mdt
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
+vendor/firmware/a540_gpmu.fw2
 
 # Graphics (Adreno)
 vendor/lib/egl/eglSubDriverAndroid.so
