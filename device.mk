@@ -251,11 +251,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0_system
 
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml
-
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
@@ -330,10 +325,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service \
+    android.hardware.secure_element@1.0 \
     com.android.nfc_extras \
     NfcNci \
     SecureElement \
-    Tag \
+    Tag
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -405,20 +401,21 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.secure_element@1.0 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
     rild \
     librmnetctl \
     libxml2 \
-    libprotobuf-cpp-full
-
-PRODUCT_BOOT_JARS += \
-    qcrilhook
+    libprotobuf-cpp-full \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml
 
 # QCOM
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
+    $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:system/etc/permissions/privapp-permissions-wfd.xml \
+    $(LOCAL_PATH)/configs/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -450,6 +447,8 @@ PRODUCT_SOONG_NAMESPACES += \
 	
 # Telephony
 PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
