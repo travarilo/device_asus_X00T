@@ -228,7 +228,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=20,20 \
     telephony.lteOnCdmaDevice=1 \
     persist.vendor.radio.procedure_bytes=SKIP \
-    persist.vendor.radio.flexmap_type=none
+    persist.vendor.radio.flexmap_type=none \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # Radio Debug Options
 PRODUCT_PROPERTY_OVERRIDES += \
