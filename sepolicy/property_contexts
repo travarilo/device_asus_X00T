@@ -6,9 +6,6 @@ persist.vendor.runin.fp            u:object_r:cdfinger_prop:s0
 use.audio.eu.parameters            u:object_r:hal_audio_prop:s0
 persist.audio.dirac                u:object_r:dirac_prop:s0
 
-# Camera
-persist.vendor.camera.debug.logfile       u:object_r:camera_prop:s0
-
 # GPU Stats
 gpu.stats.debug.level               u:object_r:vendor_default_prop:s0
 
