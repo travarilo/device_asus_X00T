@@ -59,6 +59,20 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/category_gesture">
+        <Preference
+                 android:key="gestures"
+                 android:title="@string/zenmotions"
+                 android:summary="@string/zenmotions_summary"
+                 android:icon="@drawable/ic_gestures"
+                 android:persistent="false" >
+                 <intent android:action="android.intent.action.MAIN"
+                         android:targetPackage="com.asus.zenparts"
+                         android:targetClass="com.asus.zenparts.settings.ScreenOffGestureSettings" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="vibration"
         android:title="@string/vibration_title">
         <com.asus.zenparts.preferences.VibratorStrengthPreference
