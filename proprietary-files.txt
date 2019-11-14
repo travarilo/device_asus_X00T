@@ -32,6 +32,7 @@ vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
@@ -175,11 +176,18 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 
 # Camera
+lib64/libarcsoft_beautyshot.so
+lib64/libarcsoft_night_shot.so
+lib64/libjni_imageutil.so
+lib64/libjni_snapcammosaic.so
+lib64/libjni_snapcamtinyplanet.so
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libarcsoft_arc3dnr_intf.so
 vendor/lib/libarcsoft_arcshdr_intf.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
+vendor/lib/libarcsoft_hdr.so
+vendor/lib/libarcsoft_night_shot.so
 vendor/lib/libarcsoft_picselfie_algorithm.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libdepthmapwrapper.so
@@ -1018,6 +1026,7 @@ vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_ds_api.so
 vendor/lib64/libloc_externalDr.so
+vendor/lib64/libloc_externalDrcore.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
@@ -1167,8 +1176,8 @@ vendor/lib64/libgpustats.so
 vendor/firmware/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
 # NVRAM
-bin/nvram_btwifi
-lib64/libmmi.so
+bin/nvram_btwifi:vendor/bin/nvram_btwifi
+lib64/libmmi.so:vendor/lib64/libmmi.so
 
 # Perf
 vendor/bin/energy-awareness
@@ -1343,6 +1352,7 @@ lib64/lib-imsvtextutils.so
 lib64/lib-imsvtutils.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
+lib64/librcc.so
 lib64/vendor.qti.ims.callinfo@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
 -priv-app/ims/ims.apk|58dea61205ffcee82b8d9b7431759e0eeb0f84b7
