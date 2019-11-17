@@ -216,13 +216,8 @@ PRODUCT_COPY_FILES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl-qti \
-    android.hardware.gnss@1.0-service-qti \
     libcurl \
-    libgnss \
-    libgnsspps \
-    libsensorndkbridge \
-    libsynergy_loc_api
+    libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
