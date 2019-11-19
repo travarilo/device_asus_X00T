@@ -1457,6 +1457,14 @@ vendor/bin/thermal-engine|5b0deee2f319843c32b41be26ec6648cb6fc8560
 -vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
 vendor/lib64/libthermalioctl.so|883cb0b55fc2a0354a8c7f21139767e6a413b4ac
 
+# TUI - from Nokia Dragon QKQ1.190828.002-00WW_4_040-release-keys
+product/lib/vendor.qti.hardware.tui_comm@1.0.so|313677dd28de6f6b2a5cf8b136d8ce0723bb5a65
+product/lib64/vendor.qti.hardware.tui_comm@1.0.so|b478f9ba87abd265ac15a154ab7412fed5839664
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|a0d692fe10ef9dc4479497fa666640612f06fbb4
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|f34f921b3e2a889cada5f9588009aae11af46a96
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b4b412a672
+
 # Time services - from Nokia Dragon QKQ1.190828.002-00WW_4_040-release-keys
 -vendor/app/TimeService/TimeService.apk|4a37afd1395758d946580af184a738e3c657b1e2
 vendor/bin/time_daemon|d5b056eeda44237d7511083b402b2747dbc707e1
