@@ -874,52 +874,56 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|fbff6357ee46dd6d62f490a942ff567b6ce955d1
 vendor/lib64/libdpmqmihal.so|30a170684219dd589d05ce5b446e73b7501f13e3
 
-# DRM
-vendor/bin/qseecomd
-vendor/lib/libGPreqcancel.so
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libbase64.so
-vendor/lib/libcppf.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libqisl.so
-vendor/lib/librmp.so
-vendor/lib/librpmb.so
-vendor/lib/libsdedrm.so
-vendor/lib/libsi.so
-vendor/lib/libssd.so
-vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libbase64.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libqisl.so
-vendor/lib64/librmp.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsi.so
-vendor/lib64/libssd.so
+# DRM from Nokia Dragon QKQ1.190828.002-00WW_4_040-release-keys
+vendor/bin/qseecomd|bb9dbf5c66a9d4383825a8e0c287d41f9f531a05
+vendor/lib/libcpion.so|ef80c35b037cd68eeb24d16fc87b26549abeb50c
+vendor/lib/libcppf.so|04d42e86256394f361560ca3038c055dc1df4b6a
+vendor/lib/libdrmfs.so|72a2f462bf5bfa4e9db92275523d02d617ed82c2
+vendor/lib/libdrmtime.so|bd4ca50039356949fc1caa8e954649d6350569f9
+vendor/lib/libGPQTEEC_vendor.so|76a22c21290fefff70dd45b43a83c78f8cfeb939
+vendor/lib/libGPreqcancel.so|0d4876f94aeaaa92608071d6f7246eec822bc12a
+vendor/lib/libGPreqcancel_svc.so|7d96ec19dc8dfa441547ff9c8077d2c1ccf3c5ba
+vendor/lib/libGPTEE_vendor.so|31a7dd92e19fad28f980a94bdbc48cdefc8a6323
+vendor/lib/liboemcrypto.so|ad286cf38f8b00a5c9b0b0f424e4a5bd1f47f046
+vendor/lib/libqisl.so|8f12caa1aff3309878f56647d9ce1bdfc5c32a7e
+vendor/lib/libQSEEComAPI.so|1c134972d1629e7ec8e854f0fa43e2886556dbd7
+vendor/lib/librmp.so|164d2c30a2a35167ce3160445f9f08e920b2c0b0
+vendor/lib/librpmb.so|688b867d652455f36620fb4dba99867e23750d31
+vendor/lib/libsdedrm.so|b603b6beaa50d49604ab2ebe0977a9ef79252b20
+vendor/lib/libsecureui.so|317896d31fa0afaaff1a82da559fd9ec8023ea43
+vendor/lib/libSecureUILib.so|54a5e4bdda35fb0c185dc4d5f02c51fc761ec933
+vendor/lib/libsecureui_svcsock.so|d376d887cfdddb09d343742d5110b69a39bcc0fa
+vendor/lib/libssd.so|3a346acc32b0c6c973eae448b73da3e8d35f75f8
+vendor/lib/libStDrvInt.so|457b6cbb3422d762a9e4cac2de498fb380692bb4
+vendor/lib/libtzdrmgenprov.so|8c525b28433757095f97ac80f9cbdcff7be37835
+vendor/lib64/libcpion.so|ff24ef248bb35fd3cc1081a63f33c2565dc6351f
+vendor/lib64/libdrmfs.so|d5847a27b74955a0ccfb2da499fa42902c5bf1df
+vendor/lib64/libdrmtime.so|9f1337004246fa7e6f726486bcab949fe5e2459f
+vendor/lib64/libGPQTEEC_vendor.so|c89b252b497e6d2e5e23dab93b462e8bbf414eb6
+vendor/lib64/libGPreqcancel.so|76b35e76a85b333f46ab749b7865c26ba0ca7bc4
+vendor/lib64/libGPreqcancel_svc.so|610f0d55e3c3b31a5fdd590dcd6ec8c2cf258d9b
+vendor/lib64/libGPTEE_vendor.so|0abd055676626e20585b9ab396c8973fd53af191
+vendor/lib64/liboemcrypto.so|e44fa8bf9bed1541342390bf316c34fe9f29cc4e
+vendor/lib64/libqisl.so|f81d523e3e257e99bd055f6576521519a074e630
+vendor/lib64/libQSEEComAPI.so|1dfc70896af18264af46be4bf797680cdd6b018b
+vendor/lib64/librmp.so|e47e679f717a4abf962665a01a1fc0ea2ccff673
+vendor/lib64/librpmb.so|a6add4226a289242eb2e1ccef23a94d100a94064
+vendor/lib64/libsdedrm.so|2add69c575f5745d0db2bbe8dfb7f75f9dc03ce6
+vendor/lib64/libsecureui.so|4a9861e7887b0e03294f86009b7600369d113964
+vendor/lib64/libSecureUILib.so|3a059d1fe3395eaefeb7817ad3af46987b6f4794
+vendor/lib64/libsecureui_svcsock.so|889d4a12c5dee56ed4b10548abbd7b9033cbdad2
+vendor/lib64/libssd.so|a64337d8044607b81adcf7e8c5760cf8cdcf82b4
+vendor/lib64/libStDrvInt.so|a7bd8140e2cd5aa70a7d929e01233e5b71844cd8
+vendor/lib64/libtzdrmgenprov.so|6a6b5edb8c77bb51b65f3acb2fd0dedcc255a521
 
-# DRM (Widevine) from mata QP1A.190711.107
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|5c2f83943a1c8680cde657e22425f665ab438714
+# DRM (Widevine) from Nokia Dragon QKQ1.190828.002-00WW_4_040-release-keys
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|1aed116c6cd73ee0c89a5eec050afab5c64b9f87
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib/libhdcpsrm.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib/libcpion.so
-vendor/lib64/libcpion.so
-vendor/lib/libwvhidl.so
-vendor/lib64/libwvhidl.so|ff967a2aab27d75eb858c6a7a269d4090af9f377
-vendor/lib/liboemcrypto.so
-vendor/lib64/liboemcrypto.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so|756ef69e6cdb3bb0b9bcf5973b5816c471a4a80b
+vendor/lib/mediadrm/libwvdrmengine.so|3e99a7772a52e07678c8ab47e1981ba13d88ced0
+vendor/lib64/libwvhidl.so|8f494ed8801c8fdd3930907f17737c806274447e
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so|0289025f5a34f3c7e04d816b81ca21a2153c32f4
+vendor/lib64/mediadrm/libwvdrmengine.so|af257b8f1db2671bb430d588fa1a78c5cacb1664
 
 # ESE-Powermanager
 lib64/vendor.qti.esepowermanager@1.0.so
@@ -1237,23 +1241,15 @@ vendor/lib64/libqmi_encdec.so|5e536057be350651379b772aa1bba5f4735d11ee
 vendor/lib64/libqmi.so|daa233b0db99042174635592216389df90b651d7
 vendor/lib64/libqmiservices.so|1c147d33fe72d372c16e7b67dbd70706de9fcabb
 
-# QTEE
-lib/libGPTEE_system.so
-lib/libQTEEConnector_system.so
-lib/vendor.qti.hardware.qteeconnector@1.0.so
-lib64/libGPTEE_system.so
-lib64/libQTEEConnector_system.so
-lib64/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libGPTEE_vendor.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+# Qteeconnector from Nokia Dragon QKQ1.190828.002-00WW_4_040-release-keys
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|aaa7d15a9ebb63c0152b8fb3bfd07af929e384d4
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|6afd4ca7aa70f2a5a08538a71fc5858d894eec54
+vendor/lib/libQTEEConnector_vendor.so|8de6731779807901e731232de4b844f0b5df1abe
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|5010f60bd1cf2a3b212b366cc4e46f28d5fbfa94
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|1fe6ce202398e0ae3afebd7625c59746e04413e8
+vendor/lib64/libQTEEConnector_vendor.so|48275dc35631062248c7d697478c58eb6793a92a
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|3202c209bd8249e3f76dec1108788b1a85b53561
 
 # Radio - from LA.UM.8.2.r1-04000-sdm660.0
 -product/app/datastatusnotification/datastatusnotification.apk|9d0bae96aa9f156534074b515c66126d13db5413
@@ -1435,16 +1431,16 @@ vendor/lib64/libcalmodule_common.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-# Signed graphics firmware
-vendor/firmware/cppf.b00
-vendor/firmware/cppf.b01
-vendor/firmware/cppf.b02
-vendor/firmware/cppf.b03
-vendor/firmware/cppf.b04
-vendor/firmware/cppf.b05
-vendor/firmware/cppf.b06
-vendor/firmware/cppf.b07
-vendor/firmware/cppf.mdt
+# Signed graphics firmware - from Nokia Dragon QKQ1.190828.002-00WW_4_040-release-keys
+vendor/firmware/cppf.b00|99fd8b6f1efddaecb31dab08d46746f0245f3dec
+vendor/firmware/cppf.b01|b65af3bed6c2bc2c2977fa30b17a38e7f76c60a8
+vendor/firmware/cppf.b02|6a7df9c0a69c4d3420240721e47c8f4a36f4d31e
+vendor/firmware/cppf.b03|689ef5feb5ba64d50a1413abe3e3c24c436ffc71
+vendor/firmware/cppf.b04|367eab8eb71e2f56683cd6e7316bcccad3b90a4e
+vendor/firmware/cppf.b05|08e4a9a58bcf5fccbae734a09b93c595e3e0067b
+vendor/firmware/cppf.b06|08e4a9a58bcf5fccbae734a09b93c595e3e0067b
+vendor/firmware/cppf.b07|2934295b3de8ea5e31fddd0e30ca81a0cdf6a954
+vendor/firmware/cppf.mdt|dd4317e49a672e834e720e75a95b0dfb568b7570
 
 # Soter
 framework/vendor.qti.hardware.soter-V1.0-java.jar
@@ -1474,16 +1470,16 @@ vendor/lib/libUBWC.so
 vendor/lib64/libstreamparser.so
 vendor/lib64/libUBWC.so
 
-# Widevine firmware
-vendor/firmware/widevine.b00
-vendor/firmware/widevine.b01
-vendor/firmware/widevine.b02
-vendor/firmware/widevine.b03
-vendor/firmware/widevine.b04
-vendor/firmware/widevine.b05
-vendor/firmware/widevine.b06
-vendor/firmware/widevine.b07
-vendor/firmware/widevine.mdt
+# Widevine firmware - from Nokia Dragon QKQ1.190828.002-00WW_4_040-release-keys
+vendor/firmware/widevine.b00|571f686f1e46c9ac6fcacbfd858477830072f389
+vendor/firmware/widevine.b01|b4a6e78f59539a1a50b34a9e917bca2916d5165e
+vendor/firmware/widevine.b02|dcceeec701cf4ff8aa4d4901033541f55b57440a
+vendor/firmware/widevine.b03|b4acbc90921ed2e59ba0bf49dc88ac82e3fcb0fd
+vendor/firmware/widevine.b04|2a85a6eb87a76e7860ed6009e1298e432377b70f
+vendor/firmware/widevine.b05|a1ae75240a6075768a0c5b06fc0f86cc5190aff3
+vendor/firmware/widevine.b06|a1ae75240a6075768a0c5b06fc0f86cc5190aff3
+vendor/firmware/widevine.b07|ea8cb8351c303345d95ca1de62ae0a3b302cb2ce
+vendor/firmware/widevine.mdt|0b4572ba4343b667f674d46410cb8151183c94ad
 
 # Wi-Fi
 vendor/bin/cnss-daemon
