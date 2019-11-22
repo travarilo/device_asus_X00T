@@ -500,6 +500,7 @@ PRODUCT_PACKAGES += \
 
 # WFD
 PRODUCT_PACKAGES += \
+    libmediaextractorservice \
     libnl
 
 PRODUCT_BOOT_JARS += \
