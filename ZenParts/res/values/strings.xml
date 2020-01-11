@@ -89,6 +89,39 @@
     <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
     <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
+    <!-- Zenmotions -->
+    <string name="dlg_ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="reset_message">Reset all entries to default?</string>
+
+    <string name="category_gesture">Gestures</string>
+    <string name="screen_off_gesture_title">Zenmotions</string>
+    <string name="group_applications">Applications</string>
+    <string name="select_custom_app_title">Select custom application</string>
+    <string name="gestures_dashboard_summary">Awesome screen-off gestures</string>
+    <string name="enable_gestures_title">Enable gestures</string>
+    <string name="enable_gestures_summary">Enable screen off gestures</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="zenmotions">Zenmotions</string>
+    <string name="zenmotions_summary">Awesome screen off gestures</string>
+    <string name="gestures">Gestures</string>
+    <string name="screen_off_gestures">Screen-off gestures</string>
+    <string name="gesture_double_tap_title">Gesture Double Tap</string>
+    <string name="gesture_z_title">Gesture Z</string>	
+    <string name="gesture_s_title">Gesture S</string>
+    <string name="gesture_v_title">Gesture V</string>
+    <string name="gesture_w_title">Gesture W</string>
+    <string name="gesture_c_title">Gesture C</string>
+    <string name="gesture_e_title">Gesture e</string>
+    <string name="gesture_up_title">Gesture Swipe Up</string>
+    <string name="gesture_down_title">Gesture Swipe Down</string>
+    <string name="gesture_left_title">Gesture Swipe Left</string>
+    <string name="gesture_right_title">Gesture Swipe Right</string>
+    <string name="screen_gestures_panel_title">Gestures</string>
+    <string name="proxi_summary_head">Check proximity sensor for handling gesture and fingerprint sensor</string>
+    <string name="proxi_title_head">Proximity check</string>
+
     <!-- Label for feature switch [CHAR LIMIT=30] -->
     <string name="switch_bar_on">On</string>
 
