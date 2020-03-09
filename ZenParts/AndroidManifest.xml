@@ -122,5 +122,18 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
+        <activity
+            android:name="com.asus.zenparts.TouchscreenGesturePreferenceActivity"
+			android:exported="true"
+            android:label="@string/ambient_display_gestures_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.asus.zenparts.Startup" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>

@@ -32,6 +32,7 @@ import androidx.preference.PreferenceManager;
 
 import com.asus.zenparts.KernelControl;
 import com.asus.zenparts.settings.ScreenOffGesture;
+import com.asus.zenparts.SensorsDozeService;
 import com.asus.zenparts.utils.FileUtils;
 import com.asus.zenparts.Utils;
 
@@ -67,6 +68,7 @@ public class Startup extends BroadcastReceiver {
                         screenOffGestureSharedPreferences.getBoolean(
                         ScreenOffGesture.PREF_GESTURE_ENABLE, true));
          }
+	context.startService(new Intent(context, SensorsDozeService.class));
     }
 
     private String getPreferenceString(Context context, String key, String defaultValue) {
