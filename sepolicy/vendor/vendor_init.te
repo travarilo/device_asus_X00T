@@ -19,6 +19,7 @@ allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
 # Allow vendor_init to set vendor_persist_camera_prop
 set_prop(vendor_init, vendor_persist_camera_prop)
 
+allow init adsprpcd_file:file mounton;
 allow vendor_init rootfs:dir { add_name create setattr write };
 allow vendor_init nfc_data_file:dir { search setattr };
 allow vendor_init wpa_socket:dir setattr;
