@@ -224,3 +224,6 @@ ro.vendor.qti.config.zram=true
 
 # Leds
 persist.asus.led.on=1
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
