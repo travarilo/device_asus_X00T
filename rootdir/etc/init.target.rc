@@ -60,8 +60,14 @@ on fs
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
+    exec u:r:vendor_toolbox:s0 root audio bluetooth graphics media net_raw system vendor_rfs vendor_rfs_shared -- /vendor/bin/toybox_vendor find /mnt/vendor/persist -type d -exec /vendor/bin/toybox_vendor setfattr -x security.sehash {} \;
     restorecon_recursive /mnt/vendor/persist
     write /sys/kernel/boot_adsp/boot 1
+
+    mkdir /mnt/vendor/dsp 0770 root root
+    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
+    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
+    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
 
 on post-fs
     start vendor.qseecomd
@@ -87,8 +93,9 @@ on post-fs-data
 
 on boot
     start vendor.rmt_storage
-    write /dev/cpuset/top-app/cpus 0-3,4-7
-    write /dev/cpuset/foreground/cpus 0-3,4-7
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/audio-app/cpus 1-2
+    write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
     ####Regionalization config and prop files####
@@ -159,22 +166,26 @@ on boot
     chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_calibrate
     chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_enable_wakeup
     chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_flush
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_name
     chown system system /sys/class/sensors/stk3x1x-proximity/sensors_enable
     chown system system /sys/class/sensors/stk3x1x-proximity/sensors_delay
     chown system system /sys/class/sensors/stk3x1x-proximity/sensors_calibrate
     chown system system /sys/class/sensors/stk3x1x-proximity/sensors_enable_wakeup
     chown system system /sys/class/sensors/stk3x1x-proximity/sensors_flush
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_name
 
     chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_enable
     chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_delay
     chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_calibrate
     chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_enable_wakeup
     chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_flush
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_name
     chown system system /sys/class/sensors/stk3x1x-light/sensors_enable
     chown system system /sys/class/sensors/stk3x1x-light/sensors_delay
     chown system system /sys/class/sensors/stk3x1x-light/sensors_calibrate
     chown system system /sys/class/sensors/stk3x1x-light/sensors_enable_wakeup
     chown system system /sys/class/sensors/stk3x1x-light/sensors_flush
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_name
 
     chown radio radio sys/module/stk3x1x/parameters/call_status_flag
 #Huaqin add for sensors permission-ZQL1650-141 by jianghao at 2018/12/27 end
@@ -190,8 +201,15 @@ on boot
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
-    write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
+    setprop vendor.usb.controller a800000.dwc3
     setprop sys.usb.configfs 1
+    write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
+
+on boot && property:persist.vendor.usb.controller.default=*
+    setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
+
+on property:vendor.usb.controller=*
+    setprop sys.usb.controller ${vendor.usb.controller}
 
 #Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
@@ -479,9 +497,9 @@ on charger
     load_system_props
     start qcom-post-boot
     start vendor.hvdcp_opti
+    setprop vendor.usb.controller a800000.dwc3
     setprop sys.usb.configfs 1
     start power_off_alarm
-    start vendor.thermal-engine
 
 #
 #service nqs /system/bin/nqs
