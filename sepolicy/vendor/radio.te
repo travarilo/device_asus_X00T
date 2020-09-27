@@ -1,6 +1,9 @@
+binder_call(radio, cnd, gpuservice)
+
+allow radio hal_datafactory_hwservice:hwservice_manager find;
+allow radio hal_iwlan_hwservice:hwservice_manager find;
 allow radio sysfs_kgsl:dir { search };
 allow radio baseband_prop:property_service set;
 allow radio cdfinger_prop:file { read };
 allow radio hal_audio_prop:file { read };
-get_prop(radio, baseband_prop)
-binder_call(radio, gpuservice)
+get_prop(radio, baseband_prop, qcom_ims_prop)
