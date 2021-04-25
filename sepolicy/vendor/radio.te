@@ -6,4 +6,4 @@ allow radio sysfs_kgsl:dir { search };
 allow radio baseband_prop:property_service set;
 allow radio cdfinger_prop:file { read };
 allow radio hal_audio_prop:file { read };
-get_prop(radio, baseband_prop, qcom_ims_prop)
+get_prop(radio, baseband_prop, vendor_qcom_ims_prop)
