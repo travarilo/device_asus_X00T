@@ -159,7 +159,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
-    sdm.debug.rotator_downscale=1 \
+    vendor.display.disable_rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
 
 # Huaqin project
