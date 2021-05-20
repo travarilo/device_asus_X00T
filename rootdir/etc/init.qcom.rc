@@ -69,6 +69,9 @@ on fs
     setprop persist.sys.camera.camera2 true
     # Add by AMT.meng.lv, 08/30/2019, Set camera api to camera2 end
 
+    # Telephony
+    chmod 0644 /proc/cmdline
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
     write /sys/class/graphics/fb0/idle_time 100
