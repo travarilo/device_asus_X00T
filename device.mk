@@ -453,6 +453,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libtinyxml2
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # Touch HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.X00T
