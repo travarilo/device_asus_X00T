@@ -14,15 +14,15 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="touchscreen_gesture_gesture_z_title">Gesture Z</string>
-    <string name="touchscreen_gesture_gesture_s_title">Gesture S</string>
-    <string name="touchscreen_gesture_gesture_v_title">Gesture V</string>
-    <string name="touchscreen_gesture_gesture_w_title">Gesture W</string>
-    <string name="touchscreen_gesture_gesture_c_title">Gesture C</string>
-    <string name="touchscreen_gesture_gesture_e_title">Gesture e</string>
-    <string name="touchscreen_gesture_gesture_swipe_up_title">Gesture Swipe Up</string>
-    <string name="touchscreen_gesture_gesture_swipe_down_title">Gesture Swipe Down</string>
-    <string name="touchscreen_gesture_gesture_swipe_left_title">Gesture Swipe Left</string>
-    <string name="touchscreen_gesture_gesture_swipe_right_title">Gesture Swipe Right</string>
+    <string name="touchscreen_gesture_letter_z_title">Gesture Z</string>
+    <string name="touchscreen_gesture_letter_s_title">Gesture S</string>
+    <string name="touchscreen_gesture_letter_v_title">Gesture V</string>
+    <string name="touchscreen_gesture_letter_w_title">Gesture W</string>
+    <string name="touchscreen_gesture_letter_c_title">Gesture C</string>
+    <string name="touchscreen_gesture_letter_e_title">Gesture e</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_title">Gesture Swipe Up</string>
+    <string name="touchscreen_gesture_one_finger_down_swipe_title">Gesture Swipe Down</string>
+    <string name="touchscreen_gesture_one_finger_left_swipe_title">Gesture Swipe Left</string>
+    <string name="touchscreen_gesture_one_finger_right_swipe_title">Gesture Swipe Right</string>
 
 </resources>
