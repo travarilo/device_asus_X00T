@@ -218,10 +218,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1 \
+    persist.data.iwlan.enable=true \
     persist.vendor.data.iwlan.enable=true \
     persist.radio.aosp_usr_pref_sel=true \
     persist.radio.multisim.config=dsds \
+    persist.radio.volte.dan_support=true \
+    persist.radio.VT_ENABLE=1 \
     persist.radio.VT_CAM_INTERFACE=2 \
+    persist.sys.cust.lte_config=true \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.atfwd.start=true \
     persist.vendor.radio.sib16_support=1 \
@@ -241,12 +247,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.data_con_rprt=1 \
+    persist.vendor.radio.enableadvancedscan=false \
+    persist.vendor.radio.jbims=1 \
+    persist.vendor.vt.supported=1 \
+    persist.vendor.sys.cnd.iwlan=1 \
+    persist.vendor.cne.logging.qxdm=3974 \
+    persist.vendor.radio.flexmap_type=none \
     persist.radio.calls.on.ims=1 \
-    persist.vendor.radio.flexmap_type=none
+    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.df.dev_name=rmnet_usb0
+    persist.data.df.dev_name=rmnet_usb0 \
     persist.vendor.radio.add_power_save=1
 
 # Sensor
@@ -298,6 +310,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
+   persist.dbg.ims_volte_enable=1 \
    persist.dbg.volte_avail_ovr=1 \
    persist.dbg.vt_avail_ovr=1 \
    persist.dbg.wfc_avail_ovr=1 \
