@@ -45,10 +45,8 @@ BUILD_FINGERPRINT := asus/ASUS_X00TD/ASUS_X00TD:10/QKQ1/17.2017.2012.438-2020120
 # The following system and vendor props will be set by vendor init
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.device \
-    ro.product.model \
     ro.product.name
 
 PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.vendor.product.device \
-    ro.vendor.product.model \
     ro.vendor.product.name
