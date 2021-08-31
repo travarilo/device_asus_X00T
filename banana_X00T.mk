@@ -50,3 +50,6 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
 PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.vendor.product.device \
     ro.vendor.product.name
+
+GAPPS_VERSION := true
+TARGET_GAPPS_ARCH := arm64
