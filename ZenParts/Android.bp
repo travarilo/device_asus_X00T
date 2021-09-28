@@ -1,0 +1,16 @@
+android_app {
+    name: "ZenParts",
+
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "SettingsLib",
+    ],
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    privileged: true,
+    platform_apis: true,
+    system_ext_specific: true,
+}
