@@ -159,7 +159,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     sdm.debug.rotator_downscale=1 \
-    debug.sf.enable_gl_backpressure=1 \
     vendor.display.enable_default_color_mode=1
 
 # Huaqin project
